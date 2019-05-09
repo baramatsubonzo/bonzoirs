@@ -1,6 +1,6 @@
-class CreateUsers < ActiveRecord::Migration[5.1]
+class CreateMembers < ActiveRecord::Migration[5.1]
   def change
-    create_table :users do |t|
+    create_table :members do |t|
       t.string :name
       t.string :job
       t.string :department
