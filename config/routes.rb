@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'users/index'
+  get 'members/top'
 
-  get 'users/show'
+  get 'members/show'
 
-  get 'users/new'
+  get 'members/new'
 
-  get 'users/edit'
+  get 'members/edit'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
