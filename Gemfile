@@ -57,4 +57,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'slim-rails'
 gem 'html2slim'
 
+# boostrapの導入
 gem 'bootstrap'
+
+# swiperの導入
+gem 'swiper-rails'
