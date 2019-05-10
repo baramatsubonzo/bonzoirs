@@ -1,0 +1,6 @@
+h1 メンバーの新規登録
+
+= form_with model: @members do |f|
+    = f.label :name
+    = f.text_field :name, class: 'form-control', id: 'member_name'
+    = f.submit nil, class: 'btn btn-primary'

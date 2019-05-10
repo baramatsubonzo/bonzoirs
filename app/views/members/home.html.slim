@@ -1,2 +1,2 @@
-h1 Members#home
-p Find me in app/views/members/home.html.slim
+- @members.each do |member|
+    = member.name
