@@ -62,3 +62,7 @@ gem 'bootstrap'
 
 # swiperの導入
 gem 'swiper-rails'
+
+# 画像投稿機能の導入
+gem 'carrierwave'
+gem 'mini_magick'
