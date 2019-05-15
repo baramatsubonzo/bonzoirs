@@ -1,2 +1,19 @@
-h1 Members#show
-p Find me in app/views/members/show.html.slim
+table.table.table-hover
+  tbody
+    tr
+      th 名前
+      td= @member.name
+    tr
+      th 画像
+      td= image_tag @member.picture.url if @member.picture?
+
+    tr
+      th 職種
+      td= @member.job
+
+    tr
+      th 部署
+      td= @member.department
+    tr
+      th 自己紹介
+      td= @member.description
