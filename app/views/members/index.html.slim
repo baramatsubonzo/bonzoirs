@@ -1,3 +1,12 @@
-- @members.each do |member|
-    = member.name
-    = image_tag member.picture.url if member.picture?
+.mb-3
+table.table.table-hover
+  thead.thead-default
+    tr
+      th 名前
+  tbody
+  - @members.each do |member|
+    tr
+      td = member.name
+
+        
+ 
