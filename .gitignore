@@ -16,4 +16,11 @@
 /node_modules
 /yarn-error.log
 
-.byebug_history
+.byebug_histor
+
+# app/assets/images 以下はいらない。
+app/assets/images
+
+# public/uploads/ 以下はいらない。
+public/uploads/
+
