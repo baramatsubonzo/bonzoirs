@@ -22,7 +22,6 @@ class MembersController < ApplicationController
   end
 
   def home
-    @members = Member.all
   end
 
   private
