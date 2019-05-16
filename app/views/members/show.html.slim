@@ -18,4 +18,4 @@ table.table.table-hover
       th 自己紹介
       td= @member.description
 
-= link_to '次へ', "http://localhost:3000/members/#{rand(16..18)}"
+= link_to '次へ', "http://localhost:3000/members/#{Member.pluck(:id).sample}}"
