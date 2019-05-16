@@ -1,0 +1,18 @@
+h1 メンバーの新規登録
+
+= form_with model: @member do |f|
+    .form-group
+        = f.label :name
+        = f.text_field :name, class: 'form-control', id: 'member_name'
+    .form-group
+        = f.label :job
+        = f.text_field :job, class: 'form-control', id: 'member_job'
+    .form-group
+        = f.label :department
+        = f.text_field :department, class: 'form-control', id: 'member_department'
+    .form-group
+        = f.label :description
+        = f.text_field :description, class: 'form-control', id: 'member_job'
+    .form-group
+        = f.file_field :picture
+    = f.submit nil, class: 'btn btn-primary'
