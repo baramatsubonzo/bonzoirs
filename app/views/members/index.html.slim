@@ -6,7 +6,7 @@ table.table.table-hover
   tbody
   - @members.each do |member|
     tr
-      td = member.name
+      td = link_to member.name, member_path(member)
 
         
  
