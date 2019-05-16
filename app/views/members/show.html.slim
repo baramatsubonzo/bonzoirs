@@ -17,3 +17,5 @@ table.table.table-hover
     tr
       th 自己紹介
       td= @member.description
+
+= link_to '次へ', "http://localhost:3000/members/#{rand(16..18)}"
