@@ -1,0 +1,19 @@
+h1 ユーザー一覧
+
+.mb-3
+table.table.table-hover
+  thead.thead-default
+    tr
+      th 名前
+      th メールアドレス
+      th 管理権限
+      th 作成日時
+      th 更新日時
+  tbody
+  - @users.each do |user|
+    tr
+      td = link_to user.name, [:admin, user]
+      td = user.email
+      td = user.admin? ? 'あり' : 'なし'
+      td = user.created_at
+      td = user.updated_at
