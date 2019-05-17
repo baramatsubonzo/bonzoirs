@@ -15,7 +15,7 @@ class MembersController < ApplicationController
   def create
     @member = Member.new(member_params)
     if @member.save
-      redirect_to root_path, notice: "「#{@member.name}」を登録しました"
+      redirect_to members_path, notice: "「#{@member.name}」を登録しました"
     else
       render :new
     end
