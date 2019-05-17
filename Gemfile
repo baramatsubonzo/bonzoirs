@@ -66,3 +66,6 @@ gem 'swiper-rails'
 # 画像投稿機能の導入
 gem 'carrierwave'
 gem 'mini_magick'
+
+# パスワードのハッシュ化のため
+gem 'bcrypt', '~>3.1.7'
